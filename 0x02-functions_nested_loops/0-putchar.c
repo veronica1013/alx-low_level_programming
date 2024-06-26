@@ -1,10 +1,12 @@
 #include "main.h"
+
 /**
  * main - Write a program that prints _putchar, followed by a new*
  *
  *
  * Return: On success 0.
  */
+
 int main(void)
 {
     _putchar('_');
