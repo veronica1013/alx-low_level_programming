@@ -2,9 +2,7 @@
 
 /**
  * strtow - converts a string into its separate words
- *    
  * @str: string to convert into words
- *       
  * Return: 2d array pointer
  */
 char **strtow(char *str)
