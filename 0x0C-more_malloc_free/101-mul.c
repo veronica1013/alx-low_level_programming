@@ -20,12 +20,11 @@ void _prntstr(char *s)
 long int numstrchk(char *s)
 {
 	long int len = 0;
-
 	if (*s == 0)
 	{
 		_prntstr("Error\n");
 		exit(98);
-	}	
+	}
 	while (*s)
 	{
 		if (*s < '0' || *s > '9')
