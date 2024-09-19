@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <string.h>
+
+void generate_key(const char* username, char* key) {
+    int len = strlen(username);
+    int sum = 0;
+
+    // Example key generation logic based on the username
+    for (int i = 0; i < len; i++) {
+        sum += username[i];
+    }
+
+    // Generate a "key" based on the sum of the ASCII values of the username
+    sprintf(key, "KEY-%d", sum);
+}
+
+int main(int argc, char* argv[]) {
+    if (argc != 2) {
+        printf("Usage: %s <username>\n", argv[0]);
+        return 1;
+    }
+
+    char key[50];
+    generate_key(argv[1], key);
+
+    printf("Generated key for %s: %s\n", argv[1], key);
+
+    return 0;
+}
