@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stddef.h>  // Include for NULL
 char *_strstr(char *haystack, char *needle)
 {
     char *h = haystack, *n = needle;

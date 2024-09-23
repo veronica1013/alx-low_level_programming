@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stddef.h>  // Include for NULL
 char *_strchr(char *s, char c)
 {
     while (*s)
